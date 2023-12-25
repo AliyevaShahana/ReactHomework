@@ -1,0 +1,34 @@
+    footer{
+        padding: 3rem ;
+        background-image: url("../../assets/images/footer_bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        .footer{
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media screen and (max-width:992px){
+                flex-direction: column;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            span{
+                color: red;
+            }
+            .icon{
+                color: red;
+            }
+        }
+        .rigth{
+            .icons{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
