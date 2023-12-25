@@ -73,44 +73,82 @@ h1 {
 
   .photo-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    // @media screen and (max-width: 1199px) {
+    //   max-width: 28rem;
+    // }
+    @media screen and (max-width: 992px) {
+      // max-width: 20rem;
+      flex-direction: column;
+    }
+    // @media screen and (max-width: 768px) {
+    //   max-width: 100%;
+    // }
     .left {
-      width: 45%;
-      margin-right: 5rem;
+      width: 600px;
+      margin-right: 3rem;
+      @media screen and (max-width: 1199px) {
+        max-width: 30rem;
+      }
+      @media screen and (max-width: 992px) {
+        max-width: 50rem;
+      }
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
       img {
         width: 100%;
       }
     }
     .right {
-      width: 50%;
+      width: 600px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      gap: 2rem;
-      .commit,
-      h1,
-      h3,
-      p {
-        color: white;
+      // gap: 2rem;
+      @media screen and (max-width: 1199px) {
+        max-width: 30rem;
       }
-      .commit {
+      @media screen and (max-width: 992px) {
+        max-width: 50rem;
+      }
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+
+      h1 {
+        color: white;
+        margin: 1rem 0;
+      }
+      p.commit {
         color: rgba($color: #ffffff, $alpha: 0.8);
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
       }
       .line {
         background-color: white;
       }
       h3 {
+        margin: 1rem 0;
+        color: white;
         font-size: 20px;
         font-weight: 500;
         line-height: 30px;
         font-family: "Roboto", sans-serif;
+        @media screen and (max-width: 1199px) {
+          font-size: 18px;
+        }
       }
-      p {
+      p.molit {
         font-size: 15px;
         font-weight: 400;
         line-height: 30px;
         font-family: "Poppins", sans-serif;
         color: #cecece;
+        margin-bottom: 3rem;
       }
     }
   }
@@ -181,42 +219,62 @@ h1 {
     }
   }
 }
-#team-section{
+#team-section {
   background-color: rgb(247, 247, 247);
-  .team-section{
-    .title{
+  .team-section {
+    .title {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-    .team{
+    .team {
       display: flex;
       justify-content: space-between;
-      gap:2rem;
-      .member{
+      align-items: center;
+      gap: 2rem;
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+      .member {
         padding: 5rem 0;
-        
+        width: 100%;
+        // overflow: hidden;
+        // position: relative;
         @media screen and (max-width: 1199px) {
-          max-width: 10rem;
-        }
-        @media screen and (max-width: 992px) {
           max-width: 20rem;
         }
-        // @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+          max-width: 90%;
+        }
+        // .member-img {
+       
+        //    transform: scale(1.2);
+        //     background-image: url("../../assets/images/team1.png");
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     height: 70vh;
+        
         // }
-        .member-info{
+        // img {
+        //   width: 100%;
+        //   &:hover{
+        //     transform: scale(1.2);
+        //   }
+        // }
+        .member-info {
           padding: 2rem;
           background-color: #fff;
-          h3{
+          h3 {
             font-size: 25px;
             font-weight: 700;
             color: #092c3f;
             line-height: 30px;
-            font-family: "Roboto",sans-serif;
+            font-family: "Roboto", sans-serif;
           }
           .line-div {
             display: flex;
-              gap: 10px;
+            gap: 10px;
             .line {
               width: 2.5rem;
             }

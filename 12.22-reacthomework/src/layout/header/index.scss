@@ -39,8 +39,10 @@ color: white;
 }
 
 #header-bottom {
-  padding: 2.5rem;
-
+  padding: 1.5rem;
+  // position: -webkit-sticky;
+position: sticky;
+// top: 0;
   .bottom {
     display: flex;
     justify-content: space-between;
@@ -49,7 +51,7 @@ color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 2rem;
+      gap: 3rem;
 
       a {
         color: #0d2d3e;

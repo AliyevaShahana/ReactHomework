@@ -73,8 +73,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="services">
-        <div className="container">
+      <section id="services"> 
+         <div className="container">
           <div className="services">
             <div className="line-div">
               <div className="line"></div>
@@ -103,7 +103,7 @@ const HomePage = () => {
                 cillum dolore egru lofrre dsu quality mollit anim laborumuis au
                 dolor in voluptate velit cillu.
               </h3>
-              <p>
+              <p className="molit">
                 Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr indd re
                 voluptate velit esscillumlore eu quife nrulla parihatur.
                 Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg
@@ -199,6 +199,9 @@ const HomePage = () => {
             <div className="team">
               <div className="member">
                 <img src={TeamImage2} alt="" />
+                {/* <div className="member-img">
+                  <div className="img"></div>
+                </div> */}
                 <div className="member-info">
                   <h3>Ethan Welch</h3>
                   <div className="line-div">
