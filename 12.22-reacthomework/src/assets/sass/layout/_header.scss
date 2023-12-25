@@ -1,0 +1,44 @@
+header {
+      padding: 2.5rem;
+      .header {
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .clock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            .clock-div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 10px;
+            }
+            .icons{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+    
+            a {
+              color: #0d2d3e;
+            }
+          }
+        }
+      }
+    }
+    
