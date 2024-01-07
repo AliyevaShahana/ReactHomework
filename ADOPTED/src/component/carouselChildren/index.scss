@@ -1,0 +1,40 @@
+#cards {
+    background-color: #f8f9fa;
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      }
+    }
+    .swiper-pagination {
+      margin: 4rem 0;
+      position: relative;
+
+      .swiper-pagination-bullet,
+      .swiper-pagination-bullet-active {
+        width: 13px;
+        height: 13px;
+        margin: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+      }
+      .swiper-pagination-bullet-active {
+        border: 2px solid white;
+        background-color: #bc5148;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: rgba(0, 0, 0, 0.607);
+      font-weight: 1000;
+    //   margin: 1rem;
+      //   display: none;
+      //   &:hover{
+      //     display: block;
+      //   }
+    }
+  }
+}

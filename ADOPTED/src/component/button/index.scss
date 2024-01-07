@@ -1,0 +1,23 @@
+.bgRed, .bgFullRed {
+  border: 2px solid #bc5148;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: #bc5148;
+  transition: all 0.3s;
+  margin-top: 2rem;
+  &:hover {
+    color: white;
+    background-color: #bc5148;
+  }
+}
+.bgFullRed{
+  background-color: #bc5148;
+  color: #fff;
+  &:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 7px grey;
+
+  }
+
+}
